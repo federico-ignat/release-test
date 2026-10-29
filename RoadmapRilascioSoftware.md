@@ -3,7 +3,7 @@
 **Sviluppatore:** Federico Ignat <br>
 **Data Inizio:** 29/10/2026 <br>
 **Data Fine:** 29/10/2026 <br>
-
+ 
 ### 1. Analisi delle specifiche
 | Data di apertura | Data di completamento | Note | 
 | - | - | - | 
