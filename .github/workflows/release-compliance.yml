@@ -1,21 +1,17 @@
-name: Release Compliance
+name: PR Checks
 
 on:
-  release:
-    types: [published]
+  pull_request:
+    branches:
+      - master
 
 jobs:
-  compliance:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: Ziikly/automated-release-compliance-action@v1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          compliance-profile: iso27001
-          report-path: compliance-report.json
+      - name: Checkout codice
+        uses: actions/checkout@v4
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: release-compliance-report
-          path: compliance-report.json
+      - name: Esegui test
+        run: echo "Controllo della Pull Request"
