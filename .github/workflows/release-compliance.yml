@@ -1,1 +1,21 @@
 name: Release Compliance
+
+on: 
+  release:
+    types: [published] 
+
+jobs:
+  compliance:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: Ziikly/automed-release-compliance-action@v1
+      with:
+      github-token: ${{ secret.GITHUB_TOKEN }}
+      compliance-profile: iso27001
+      reporte-path: compliance-report.json
+
+      -uses: action/upload-artifact@4
+      with:
+      name: relase-compliance-report
+      path: compliance-report.json
