@@ -11,3 +11,5 @@ Sono state eseguite le seguenti attività:
 - Validazione del corretto funzionamento del processo automatico di controllo delle release.
 
 Risultato: processo di conformità automatizzato correttamente e funzionante.  
+
+ffwfwf
