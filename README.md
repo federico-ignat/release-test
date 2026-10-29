@@ -13,3 +13,6 @@ Sono state eseguite le seguenti attività:
 Risultato: processo di conformità automatizzato correttamente e funzionante.  
 
 ffwfwf
+
+
+nbhuj
